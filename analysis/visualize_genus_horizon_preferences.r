@@ -84,7 +84,7 @@ ggplot(to_compare_horizons %>% filter(hour == "200" & simulation_type %in%
 	#geom_hline(yintercept = 0) +
 	geom_vline(xintercept = 0) #+ xlim(c(-2,))
 
-
+# run predict_bacterial_abundances to create
 meta_gen <- meta_gen %>% mutate(genus = recode(name, "g_Nitrospira" = "Nitrospira",
 																							 "g_Geobacter" = "Geobacter",
 																							 "g_Pseudomonas" = "Pseudomonas",

@@ -163,6 +163,7 @@ j = 23 # best overall time
 i = c(25,300)
 
 i = c(25,100)
+i = c(0,25)
 
 area = 400
 eval_out = list()

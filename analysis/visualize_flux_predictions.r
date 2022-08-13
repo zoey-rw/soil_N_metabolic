@@ -45,17 +45,17 @@ ggplot(eval_out_df_best,
 
 
 
-eval_out_df_best %>% filter(time_set=="0_200") %>%
+eval_out_df_best %>% filter(time_set=="0_25") %>%
 	ggplot(., aes(y =nitr_obs, x = nitr_pred)) +
 	geom_point(size = 3, alpha=.5) + #geom_smooth(method = "lm") +
 	theme_bw()  +
 	stat_smooth(method = "lm") +
 	stat_regline_equation(
 		aes(label =  paste(..eq.label.., ..adj.rr.label.., sep = "~~~~")),
-		 label.x = 0, label.y = .4)
+		 label.x = -0.04, label.y = .4)
 
 
-eval_out_df_best %>% filter(time_set=="0_200") %>%
+eval_out_df_best %>% filter(time_set=="0_25") %>%
 	ggplot(., aes(y =nmin_obs, x = nmin_pred)) +
 	geom_point(size = 3, alpha=.5) + #geom_smooth(method = "lm") +
 	theme_bw()  +
